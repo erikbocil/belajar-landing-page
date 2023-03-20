@@ -9,13 +9,16 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="flex">
         <div class="header-logo">Header Logo</div>
-        <ul>
+        <ul class="link active" id="ul">
           <li><a href="">Header link one</a></li>
           <li><a href="">Header link two</a></li>
           <li><a href="">Header link three</a></li>
         </ul>
+        <span class="hamburger">&#x2630;</span>
+        <!-- <span class="menu-icon open">&#x2261;</span>
+        <span class="menu-icon close">&#x2715;</span> -->
       </nav>
     </header>
     <div class="hero">
@@ -27,7 +30,9 @@
           deserunt libero architecto, placeat eius quos atque omnis amet quod
           laborum.
         </p>
-        <button>Sign Up</button>
+        <button onclick="location.href='https://www.google.com'" type="button">
+          Sign Up
+        </button>
       </div>
       <img
         src="https://cdn.idntimes.com/content-images/community/2022/11/kobo-kanaeru-be159cbf274da6ef841a10d7605a8f4c-fede9f2a579e16a0ff17fd889a8ea4fc.png"
@@ -94,10 +99,15 @@
             ipsa.
           </p>
         </div>
-        <button>Sign Up</button>
+        <button onclick="location.href='https://google.com'" type="button">
+          Sign Up
+        </button>
       </div>
     </section>
 
     <footer>Copyright &copy; The Odin Project 2023</footer>
+
+    <script src="jquery-3.6.4.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
